@@ -1,0 +1,24 @@
+<html>
+    <head>
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    </head>
+    <body>
+	
+	<center>
+		<h1>Vue Example - Component - Django API</h1>        
+        <div id="app">
+            <ol>
+                <clientes-list
+                    v-for="c in cliente"
+                    v-bind:clientes="c"
+                    v-bind:key="c.id">
+                </clientes-list>
+            </ol>
+
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
